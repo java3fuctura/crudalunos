@@ -6,7 +6,7 @@
   <packaging>war</packaging>
   <name>crudalunos</name>
   <build>
-  	<finalName>crudalunos</finalName>
+  	<finalName>${project.name}</finalName>
 	<plugins>
 		<plugin>
 			<groupId>org.apache.maven.plugins</groupId>
@@ -23,7 +23,7 @@
 			<configuration>
 				<server>mytomcat</server>
 				<url>http://localhost:8080/manager/text</url>
-				<path>/crudalunos</path>
+				<path>/${project.name}</path>
 			</configuration>
 		</plugin>
 	</plugins>
